@@ -215,6 +215,13 @@ nav.pages ul li, nav.page ul li {
     h1{
         font-size: 2em;
     }
+    /* making the about page footer be on the bottom of the page */
+    .aboutfooter
+    {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
 }
 @media screen and (min-width: 900px){
 
