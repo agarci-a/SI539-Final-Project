@@ -1,0 +1,409 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Knewave&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Knewave&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+.knewave-regular {
+    font-family: "Knewave", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body p, figcaption{
+    font-family: 'Nunito';
+    color: #5C4033;
+}
+h1{
+    font-family: 'Knewave';
+    font-size: 3em;
+    color: #5C4033;
+}
+h2, footer p, header, nav.page ul li a{
+    font-family: 'Knewave';
+    color: #5C4033;
+}
+body{
+    text-align: center; 
+    background-color: #f2e9dd;
+}
+
+li{
+    display: inline-block;
+}
+a{
+    color: #5C4033;
+    text-decoration: none;
+}
+header{
+    text-align: center;
+}
+body{
+    background-color: white;
+}
+footer p{
+    color: #5C4033;
+}
+
+
+#main-content{
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+h1{
+    color: #5C4033;
+    text-align:center;
+    margin-top: 10%; 
+    margin-top: 5%; 
+
+}
+
+footer{
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.skip{
+    position: absolute;
+    top: -80px;
+    left: 350px;
+}
+.skip a:focus{
+    position: absolute;
+    top: 80px;
+    color: black;
+        
+}
+#title{
+    color: #5C4033;;
+    text-align: center;
+    margin-right: 20%;
+    margin-left: 20%;
+}
+nav.pages, nav.page ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+nav.pages ul, nav.page ul {
+    display: flex;
+    padding: 0px; 
+    margin: 0px;
+    justify-content: center;
+}
+
+
+nav.pages ul li, nav.page ul li {
+    margin-right: 25px; 
+    margin-left: 10px;
+}
+
+.about_me {
+    margin-left: auto; 
+}
+
+
+@media screen and (prefers-reduced-motion: reduce){
+    html{
+        scroll-behavior: auto; 
+    }
+}
+
+@media screen and (min-width: 300px){
+
+    @keyframes fade-in {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      
+    .beetle{
+        animation-name: fade-in;
+        animation-duration: 4.5s;
+    }
+    @keyframes rotation {
+        0% {
+            transform: rotate(0deg); 
+        }
+        50% {
+            transform: rotate(10deg); 
+        }
+        100% {
+            transform: rotate(-10deg); 
+        }
+    }
+    .ticket{
+        width: 50%;
+    }
+    body{
+        text-align: center; 
+        background-color: #f2e9dd;
+    }
+    figcaption, .themes{
+        visibility: none;
+        display: none;
+        justify-content: center;
+    }
+    section p{
+        justify-content: center;
+    }
+
+    .favorites, .y2024, .honorable{
+        display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+        gap: 20px;
+    }
+
+
+    img{
+        width: 80%;
+    }
+    .polaroid{
+        flex: 1 1 calc(50% - 20px);
+        max-width: calc(50% - 20px); 
+        box-sizing: border-box; 
+    }
+    h2 {
+        display: block; 
+        text-align: center;
+        margin: 20px auto; 
+        width: 100%; 
+        position: relative;
+    }
+    .trailer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+    .mov{
+        width: 50%;
+    }
+    .movie p, .movie .fig, .watch{
+        visibility: visible;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    
+    }
+    .fig{
+        margin-bottom: 30px;
+        margin-right: 30px;
+        margin-left: 30px
+    }
+    .me{
+        width: 30%;
+        border-radius: 360px;
+        border: 2px solid #5C4033;
+        background-color: #5C4033;
+    }
+    .about{
+        margin-top: 5%;
+    }
+    h1{
+        font-size: 2em;
+    }
+}
+@media screen and (min-width: 900px){
+
+        
+    .ticket {
+        animation-name: rotation;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+    }
+    @keyframes slide {
+        from {
+          transform: translateY(100%);
+        }
+        to {
+          transform: translateY(0%);
+        }
+      }
+    
+      .slide {
+        animation-name: slide;
+        animation-duration: 1.2s;
+        animation-timing-function: linear;
+      }
+
+    .description {
+        display: flex;
+    }
+    #main-content{ 
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+    }
+    figcaption, section p{
+        display: flex;
+    }
+    h2 {
+        display: block; 
+        text-align: center;
+        margin: 20px auto; 
+        width: 100%; 
+    }
+    p{
+        font-size: 1.2em;
+        text-align: center;
+
+    }
+    section {
+        flex: 1 1 25%;
+        text-align: center;
+      }
+    img{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+
+    }
+    .polaroid:hover, .watch:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+    }
+    figcaption {
+        margin-top: 8%; 
+        text-align: center; 
+        font-size: 1rem; 
+        color: #5C4033;
+    }
+    body {
+        background-color: #f2e9dd;
+    }
+    .favorites {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px; /* Adjust spacing between the cards */
+    }
+    section.polaroid, section.watch {
+        width: 100%;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        flex: 1 1 calc(33.33% - 30px); 
+        max-width: calc(33.33% - 30px);
+        box-sizing: border-box;
+        padding: 15px 15px 15px 15px;
+        border-radius: 25px;
+        border:  #ddc5a6 2px solid;
+    }
+    section.watch{
+        background-color: white;
+    }
+
+    div.movie {
+        text-align: center;
+      }
+
+    .description{
+        font-size: 1.em;
+        text-align: center;
+        color: #5C4033;
+    }
+    .themes{
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    .t1, .t2{
+        padding: 10px 10px 10px 10px;
+        background-color: #eceae7;
+        border-radius: 10px;
+    }
+    .synopsis {
+        text-align: left; 
+        width: 100%;   
+        margin-top: 40px;   
+    }
+    
+    .description p {
+        text-align: left; 
+        margin: 0;        
+    }
+    .ticket{
+        width: 20%;
+    }
+    .review p{
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .beetle{
+        border: 5px solid white;
+        border-radius: 25px;
+    }
+    .watch{
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-items: center;
+        margin: 20px 20px 20px 20px;
+    }
+    #main{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .movie p, .movie figcaption{
+        visibility: visible;
+        display: flex;
+    }
+    .watch{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        border: 2px solid #5C4033;
+        border-radius: 25px;
+        padding: 10px 10px 10px 10px;
+        margin: 10px 10px 10px 10px;
+    }
+    .mov{
+        width: 70%;
+        height: 70%;
+        margin-right: 2%;
+    }
+    .movie{
+        display:flex;
+        flex-direction: column;
+
+    }
+    .fig{
+        margin-top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    .movie p{
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    .me{
+        width: 20%;
+        border-radius: 360px;
+        border: 2px solid #5C4033;
+        background-color: #5C4033;
+    }
+    .about{
+        margin-left: 10%;
+        margin-right: 10%;
+        display: flex;
+        align-items: center;
+    }
+    .descript{
+        margin-left: 3%;
+        margin-right: 10%;
+    }
+    .video{
+        width: 100%;
+        height: 100%
+    }
+}

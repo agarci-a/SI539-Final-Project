@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/me.PNG">
+    <title>About me</title>
+</head>
+
+<body>
+    <header>
+        <div class="skip"><a href = "#main-content">Skip to Main Content</a></div>
+        <nav class="pages" title="main navigation">
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "spotlight.html">Spotlight</a></li>
+                <li><a href = "watchlist.html">Watchlist</a></li>
+            </ul>
+            <ul class="about_me">
+                <li><a href="about.html"class="active">About Me</a></li>
+            </ul>
+        </nav>
+        <h1 id="title">About Me</h1>
+    </header>
+    
+    <main id="main-content"> 
+    <div class="about">
+        <img src="images/me.png" class="me" alt="">
+        <p class="descript">Hi! My name's Ally and I am a first year MSI student on the UX Design track. For my final project of my Web Design class I decided to make a personal website about movies. I like dramas, horror, and thrillers. My favorite movie from this year was Challengers! Thanks for checking out my site &#127916;</p>
+    </div>
+    </main>
+    <footer>
+        <nav class="page">
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "spotlight.html">Spotlight</a></li>
+                <li><a href = "watchlist.html">Watchlist</a></li>
+            </ul>
+        </nav>
+        <p>© <span id="year"></span> Ally Garcia</p>
+    </footer>
+    <script src="java/style.js"> </script>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+
+</body>
+</html>

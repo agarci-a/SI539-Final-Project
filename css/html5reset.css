@@ -1,0 +1,14 @@
+p{
+    font-size: medium;
+    font-family: sans-serif;
+    color: black;
+}
+h1{
+    color: black;
+    text-align: center;
+}
+
+body p{
+    font-family: sans-serif;
+    color: black;
+}

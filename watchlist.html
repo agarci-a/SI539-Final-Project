@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/html5reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/me.PNG">
+    <title>Watchlist</title>
+</head>
+
+<body>
+    <header>
+        <div class="skip"><a href = "#main">Skip to Main Content</a></div>
+        <nav class="pages" title="main navigation">
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "spotlight.html">Spotlight</a></li>
+                <li><a href = "watchlist.html" class="active">Watchlist</a></li>
+            </ul>
+            <ul class="about_me">
+                <li><a href="about.html">About Me</a></li>
+            </ul>
+        </nav>
+        <h1 id="title">What I want to watch</h1>
+    </header>
+    
+
+    <main id="main" class="slide"> 
+        <section id ="nos" class="watch">
+            <img src="images/nos.jpg" class="mov" alt="movie poster of Nosferatu">
+            <div class="movie"> 
+            <p><strong>Nosferatu (2024)</strong></p> 
+            <figcaption class="fig">Even though this movie is not out yet, I've seen great reviews about it already! It's a remake of the Noseratu (1922) film about Dracula</figcaption>
+        </div>
+    </section>
+
+    <section id ="swiss" class="watch">
+        <img src="images/swiss.jpg" class="mov" alt="movie poster of Swiss Army Man">
+        <div class="movie"> 
+        <p><strong>Swiss Army Man</strong></p> 
+        <figcaption class="fig">I don't know much about this movie but I know some people that really like it and I'm interested in watching it</figcaption>
+        </div>
+    </div>
+</section>
+
+<section id ="tv" class="watch">
+    <img src="images/tv.jpg" class="mov" alt="movie poster of I Saw the TV Glow">
+    <div class="movie"> 
+    <p><strong>I Saw the TV Glow</strong></p> 
+    <figcaption class="fig">I've heard great things about this movie and some people say its one of their favorite A24 films</figcaption>
+</div>
+</section>
+
+<section id ="old" class="watch">
+    <img src="images/old.jpg" class="mov" alt="movie poster of Oldboy">
+    <div class="movie"> 
+    <p><strong>Oldboy</strong></p> 
+    <figcaption class="fig">A lot of people like this movie and have rated it highly. The  the trailer looks really interesting and I'm looking forward to watching it</figcaption>
+</div>
+</section>
+
+<section id ="inside" class="watch">
+    <img src="images/inside.jpg" class="mov" alt="movie poster of Inside Out 2">
+    <div class="movie"> 
+    <p><strong>Inside Out 2</strong></p> 
+    <figcaption class="fig">I didn't get to watch it when it came out but a lot of people said they liked it </figcaption>
+</div>
+</section>
+
+<section id ="bill" class="watch">
+    <img src="images/bill.jpeg" class="mov" alt="movie poster of Kill Bill 2">
+    <div class="movie"> 
+    <p><strong>Kill Bill 2</strong></p> 
+    <figcaption class="fig">I've already seen this movie but I want to watch it again </figcaption>
+</div>
+</section>
+    </main>
+
+    <footer>
+        <nav class="page">
+            <ul>
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "spotlight.html">Spotlight</a></li>
+                <li><a href = "watchlist.html" class="active">Watchlist</a></li>
+            </ul>
+        </nav>
+        <p>© <span id="year"></span> Ally Garcia</p>
+    </footer>
+    <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
