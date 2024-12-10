@@ -156,6 +156,7 @@ nav.pages ul li, nav.page ul li {
     }
     section p{
         justify-content: center;
+        font-size: 0.8em;
     }
 
     .favorites, .y2024, .honorable{
@@ -335,6 +336,11 @@ nav.pages ul li, nav.page ul li {
         width: 100%;   
         margin-top: 40px;   
     }
+    section p{
+        justify-content: center;
+        font-size: 1.2em;
+    }
+
     /* stlying spotlight page */
     .description p {
         text-align: left; 
